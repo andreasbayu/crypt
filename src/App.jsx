@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import algorithms from "./assets/algorithm_dict";
-import * as libs from "../libs/pkg/libs";
+import * as libs from "./../libs/pkg/libs";
 
 function App() {
   const [tabSelect, setTabSelect] = useState(0);
