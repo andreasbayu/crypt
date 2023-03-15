@@ -1,0 +1,13 @@
+{
+  "name": "libs",
+  "version": "0.1.0",
+  "files": [
+    "libs_bg.wasm",
+    "libs.js",
+    "libs_bg.js",
+    "libs.d.ts"
+  ],
+  "module": "libs.js",
+  "types": "libs.d.ts",
+  "sideEffects": false
+}
