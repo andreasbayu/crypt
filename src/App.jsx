@@ -40,6 +40,13 @@ function App() {
       exec
         .then((val) => setEncoded(val))
         .catch((err) => alert(`Error: ${err}`));
+    } else if (id === "vigenere") {
+      const exec = new Promise((resolve, reject) => {
+        resolve(libs.vigenere_encode(plaintextEncode, keyEncode));
+      });
+      exec
+        .then((val) => setEncoded(val))
+        .catch((err) => alert(`Error: ${err}`));
     }
   }
 
@@ -48,6 +55,13 @@ function App() {
     if (id === "caesar_chiper") {
       const exec = new Promise((resolve, reject) => {
         resolve(libs.caesar_decode(plaintextDecode, Number(keyDecode)));
+      });
+      exec
+        .then((val) => setDecoded(val))
+        .catch((err) => alert(`Error: ${err}`));
+    } else if (id === "vigenere") {
+      const exec = new Promise((resolve, reject) => {
+        resolve(libs.vigenere_decode(plaintextDecode, keyDecode));
       });
       exec
         .then((val) => setDecoded(val))

@@ -8,10 +8,10 @@ let algorithms = [
     },
     {
         index: 1,
-        id: 'morse',
-        name: 'Morse',
-        key_required: false,
-        key_name: 'null'
+        id: 'vigenere',
+        name: 'Vigenere',
+        key_required: true,
+        key_name: 'Key'
     }
 ]
 

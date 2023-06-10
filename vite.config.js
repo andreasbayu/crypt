@@ -9,5 +9,8 @@ export default defineConfig({
     exclude: [
       "@syntect/wasm"
     ]
+  },
+  build: {
+    target: 'esnext',
   }
 });

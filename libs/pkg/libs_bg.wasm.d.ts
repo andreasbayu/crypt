@@ -1,6 +1,8 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
+export function vigenere_encode(a: number, b: number, c: number, d: number, e: number): void;
+export function vigenere_decode(a: number, b: number, c: number, d: number, e: number): void;
 export function caesar_encode(a: number, b: number, c: number, d: number): void;
 export function caesar_decode(a: number, b: number, c: number, d: number): void;
 export function __wbindgen_add_to_stack_pointer(a: number): number;
